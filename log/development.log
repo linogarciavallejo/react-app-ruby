@@ -1,0 +1,538 @@
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:04:57 -0600
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+):
+  
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.5) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.5) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.5) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.5) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.5) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:09:19 -0600
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "linovallejo" does not exist
+):
+  
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.5) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.5) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.5) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.5) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.5) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:18:26 -0600
+  
+ActiveRecord::NoDatabaseError (We could not find your database: react_app_ruby_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.5) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.5) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.5) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.5) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.5) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.5) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.5) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.5) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.5) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.5) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (7.0.5) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-06-14 17:18:56 -0600
+  [1m[35m (112.3ms)[0m  [1m[35mCREATE DATABASE "react_app_ruby_development" ENCODING = 'unicode'[0m
+  [1m[35m (97.9ms)[0m  [1m[35mCREATE DATABASE "react_app_ruby_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:18:56 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 495)
+Completed 200 OK in 331ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 4825)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:20:05 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 487)
+Completed 200 OK in 138ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1565)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:25:49 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.0ms | Allocations: 827)
+Completed 200 OK in 427ms (Views: 72.7ms | ActiveRecord: 0.0ms | Allocations: 7815)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:34:31 -0600
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (Duration: 47.0ms | Allocations: 457)
+  Rendered layout layouts/application.html.erb (Duration: 11048.5ms | Allocations: 112248)
+Completed 200 OK in 11604ms (Views: 11158.4ms | ActiveRecord: 0.0ms | Allocations: 119414)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:37:52 -0600
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (Duration: 43.8ms | Allocations: 699)
+  Rendered layout layouts/application.html.erb (Duration: 3539.7ms | Allocations: 39553)
+Completed 200 OK in 4062ms (Views: 3630.2ms | ActiveRecord: 0.0ms | Allocations: 46721)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:45:49 -0600
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning package.json: No license field
+/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js:1:87)
+    at Module._compile (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js:3:21)
+    at Module._compile (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/yargs/yargs.js:576:18)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered books/index.html.erb within layouts/application (Duration: 45711.3ms | Allocations: 10283)
+  Rendered layout layouts/application.html.erb (Duration: 45713.5ms | Allocations: 10387)
+Completed 500 Internal Server Error in 46347ms (ActiveRecord: 0.0ms | Allocations: 17489)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /mnt/c/Users/LinoG/Projects/react-app-ruby/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    1: <h1 <%= javascript_pack_tag 'application' %>>Books#index</h1>
+    2: <p>Find me in app/views/books/index.html.erb</p>
+    3: <%= react_component("HelloWorld", { greeting: "Hello, I'm a React component integrated with react-rails." }) %>
+  
+app/views/books/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2023-06-14 17:51:28 -0600
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning package.json: No license field
+/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack/bin/webpack.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js:1:87)
+    at Module._compile (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js:3:21)
+    at Module._compile (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/yargs/yargs.js:576:18)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+  Rendered books/index.html.erb within layouts/application (Duration: 37940.3ms | Allocations: 10801)
+  Rendered layout layouts/application.html.erb (Duration: 37943.0ms | Allocations: 10905)
+Completed 500 Internal Server Error in 38458ms (ActiveRecord: 0.0ms | Allocations: 18012)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /mnt/c/Users/LinoG/Projects/react-app-ruby/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    1: <head>
+    2: <title>React and Ruby</title>
+    3: <%= javascript_pack_tag 'application' %>
+    4: </head>
+    5: <h1>Books#index</h1>
+    6: <p>Find me in app/views/books/index.html.erb</p>
+  
+app/views/books/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2023-06-14 18:01:59 -0600
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning package.json: No license field
+/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+Require stack:
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js
+- /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack/bin/webpack.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js:1:87)
+    at Module._compile (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js:3:21)
+    at Module._compile (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:71:45
+    at Object.parse (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/yargs/yargs.js:576:18)
+    at /mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/environment.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/config/webpack/development.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/utils/convert-argv.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack-cli/bin/cli.js',
+    '/mnt/c/Users/LinoG/Projects/react-app-ruby/node_modules/webpack/bin/webpack.js'
+  ]
+}
+
+Node.js v18.16.0
+
+  Rendered books/index.html.erb within layouts/application (Duration: 45642.4ms | Allocations: 10827)
+  Rendered layout layouts/application.html.erb (Duration: 45644.3ms | Allocations: 10931)
+Completed 500 Internal Server Error in 46197ms (ActiveRecord: 0.0ms | Allocations: 18038)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /mnt/c/Users/LinoG/Projects/react-app-ruby/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    1: <head>
+    2: <title>React and Ruby</title>
+    3: <%= javascript_pack_tag 'application' %>
+    4: </head>
+    5: <h1>Books#index</h1>
+    6: <p>Find me in app/views/books/index.html.erb</p>
+  
+app/views/books/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2023-06-14 18:07:13 -0600
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (Duration: 51.7ms | Allocations: 708)
+  Rendered layout layouts/application.html.erb (Duration: 8992.7ms | Allocations: 47550)
+Completed 200 OK in 9512ms (Views: 9091.6ms | ActiveRecord: 0.0ms | Allocations: 54718)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 03:36:16 -0600
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /mnt/c/Users/LinoG/Projects/react-app-ruby/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 6920cb8f222658fc76e5
+Version: webpack 4.46.0
+Time: 76765ms
+Built at: 06/15/2023 3:38:19 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-d4c6674088416f415d76.js  1.78 MiB       application  [emitted] [immutable]  application
+     js/application-d4c6674088416f415d76.js.map  2.01 MiB       application  [emitted] [dev]        application
+         js/hello_react-470dc78520c36ba89caf.js  1.24 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-470dc78520c36ba89caf.js.map  1.41 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-4f6f818da1727e681435.js  1.78 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-4f6f818da1727e681435.js.map  2.01 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-d4c6674088416f415d76.js js/application-d4c6674088416f415d76.js.map
+Entrypoint hello_react = js/hello_react-470dc78520c36ba89caf.js js/hello_react-470dc78520c36ba89caf.js.map
+Entrypoint server_rendering = js/server_rendering-4f6f818da1727e681435.js js/server_rendering-4f6f818da1727e681435.js.map
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 197 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 214 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 299 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 474 bytes {application} {hello_react} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 547 bytes {application} {hello_react} {server_rendering} [built]
+    + 35 hidden modules
+
+  Rendered books/index.html.erb within layouts/application (Duration: 121720.0ms | Allocations: 4427)
+  Rendered layout layouts/application.html.erb (Duration: 125654.5ms | Allocations: 43197)
+Completed 200 OK in 126231ms (Views: 125757.5ms | ActiveRecord: 0.0ms | Allocations: 50371)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-15 10:57:12 -0600
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered books/index.html.erb within layouts/application (Duration: 620.2ms | Allocations: 2609)
+  Rendered layout layouts/application.html.erb (Duration: 4476.6ms | Allocations: 41197)
+Completed 200 OK in 5099ms (Views: 4587.5ms | ActiveRecord: 0.0ms | Allocations: 48366)
+
+
